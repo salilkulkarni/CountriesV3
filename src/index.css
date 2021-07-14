@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  align-items: center;
+}
+
+body {
+  align-items: center;
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: rgb(233, 233, 233);
+  opacity: 2;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: rgb(187, 183, 183);
+  padding: 15px 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+.grid article {
+  box-shadow: 0 5px 5px rgb(190, 190, 190);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Filter {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .Filter .form-control {
+    width: auto;
+  }
+  .Filter .form-control input {
+    width: auto;
+    margin: 0;
+  }
+
+  .Filter .Region-Filter {
+    width: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .body {
+    padding: 50px 100px;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
+
+  .header,
+  .Filter,
+  .grind {
+    padding: 20px 100px;
+  }
+}
+
+.grid article img {
+  border-radius: 5px 5px 0px 0px;
+
+  height: 200px;
+  width: 400px;
+}
+
+.grid .info h4 {
+  padding-bottom: 5px;
+}
+.grid .info h3 {
+  padding-bottom: 10px;
+}
+
+.grid .info h4 span {
+  padding-bottom: 5px;
+}
+
+.grid .info {
+  background-color: rgb(204, 204, 204);
+  padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.biginfo {
+  border-style: solid;
+  padding: 20px;
+  border-radius: 5px 5px 5px 5px;
+  border-color: darkgray;
+}
+
+/*
+ .header{
+   
+   text-align: center;
+   margin-bottom: 30px;
+   font-weight: 500;
+ }*/
+
+.btn {
+  margin-top: 2px;
+  background-color: rgb(185, 185, 185);
+  padding: 5px;
+  color: black;
+  border: 1px solid;
+  border-color: rgb(204, 204, 204);
+  border-radius: 4px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.Filter .form-control {
+  width: 100%;
+}
+
+.Filter .form-control input {
+  background-color: rgb(167, 167, 167);
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: rgb(228, 228, 228);
+  letter-spacing: 0.5px;
+  width: 200 px;
+  margin: 0 0 20px;
+}
+
+.Filter .form-control input::placeholder {
+  color: #fff;
+}
+.Filter .Region-Filter {
+  /*width: 100%;*/
+}
+
+.Filter .Region-Filter .select {
+  background-color: rgb(167, 167, 167);
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: rgb(228, 228, 228);
+  width: 200 px;
+  margin: 0 0 30px;
+  align-items: flex-end;
+}
+
+.HH {
+  text-align: center;
+}
